@@ -27,13 +27,13 @@ function init() {
     renderer.setSize(width, height);
     container.appendChild(renderer.domElement);
   
-    const material = new THREE.MeshPhongMaterial({ color: 0x006400 });  // Dark Green color
+    const material = new THREE.MeshPhongMaterial({ color: 0x006400 }); 
   
     const geometry = new THREE.PlaneGeometry(100, 100);
     cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
   
-    light = new THREE.PointLight(0xffffff, 2, 1000);  // Increased light intensity
+    light = new THREE.PointLight(0xffffff, 2, 1000); 
     light.position.set(0, 0, 150);
     scene.add(light);
 

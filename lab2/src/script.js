@@ -1,9 +1,9 @@
 var canvas = document.getElementById('drawingCanvas');
 var ctx = canvas.getContext('2d');
 var currentColor = "#000000";
-var drawingMode = 'points'; // Початковий режим - точки
-var points = []; // Масив для зберігання точок для трикутника
-var circle = null; // Початкове значення для кола
+var drawingMode = 'points'; 
+var points = [];
+var circle = null; 
 
 document.getElementById('colorPicker').addEventListener('change', function() {
     currentColor = this.value;
