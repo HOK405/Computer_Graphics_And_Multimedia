@@ -101,17 +101,17 @@ window.onload = function () {
   gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
 
   var colors = new Float32Array([
-    0.0, 0.5, 0.0,  // First Rectangle (Green)
+    0.0, 0.5, 0.0,  
     0.0, 0.5, 0.0,
     0.0, 0.5, 0.0,
     0.0, 0.5, 0.0,
     
-    1.0, 0.0, 0.0,  // Second Rectangle (Red)
+    1.0, 0.0, 0.0,  
     1.0, 0.0, 0.0,
     1.0, 0.0, 0.0,
     1.0, 0.0, 0.0,
     
-    0.0, 0.0, 1.0,  // Third Rectangle (Blue)
+    0.0, 0.0, 1.0,  
     0.0, 0.0, 1.0,
     0.0, 0.0, 1.0,
     0.0, 0.0, 1.0,
@@ -147,7 +147,7 @@ window.onload = function () {
   gl.activeTexture(gl.TEXTURE0);
   gl.bindTexture(gl.TEXTURE_2D, fbo.texture);
 
-  gl.clearColor(0.0, 0.0, 0.0, 0.3); // Set clear color to black
+  gl.clearColor(0.0, 0.0, 0.0, 0.3); // Очищення кольору до темно-сірого
   gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
   
 
